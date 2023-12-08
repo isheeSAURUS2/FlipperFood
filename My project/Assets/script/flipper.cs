@@ -6,6 +6,9 @@ public class flipper : MonoBehaviour
 {
     [SerializeField] private float timer = 0f;
     private float delay = 10f;
+    [SerializeField] private GameObject left-wall;
+    [SerializeField] private GameObject right-wall;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,10 @@ public class flipper : MonoBehaviour
         if(timer >= delay){
             timer = 0;
             //do iets
+        }
+
+        if (Input.GetKeyDown("k")){
+            //doe iets
         }
     }
 }
