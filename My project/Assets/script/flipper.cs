@@ -17,7 +17,7 @@ public class flipper : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer => delay){
+        if(timer >= delay){
             timer = 0;
             //do iets
         }
