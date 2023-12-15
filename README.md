@@ -10,7 +10,7 @@
 -Within Time
 
 
--Cut the rope typa shit
+-Cut the rope
 
 
 -Keep it alive
