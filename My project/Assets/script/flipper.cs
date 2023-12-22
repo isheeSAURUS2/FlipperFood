@@ -20,9 +20,10 @@ public class flipper : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        //timer = Mathf.Round(timer += Time.deltaTime);
         if(timer >= delay && CanClick){
             timer = 0;
-            Destroy(foodObject);
+            foodObject.SetActive(false);
             
             //do iets
         }
