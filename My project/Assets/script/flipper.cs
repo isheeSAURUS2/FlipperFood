@@ -20,7 +20,7 @@ public class flipper : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= delay){
+        if(timer >= delay && CanClick){
             timer = 0;
             Destroy(foodObject);
             
