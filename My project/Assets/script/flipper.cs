@@ -27,12 +27,12 @@ public class flipper : MonoBehaviour
             //do iets
         }
 
-        if (Input.GetKeyDown("k") && CanClick && HasFood){
+        if (Input.GetKeyDown("f") && CanClick && HasFood){
             transform.Rotate(0,0,-45);
             rightWall.SetActive(false);
             CanClick = false;
         }
-        if (Input.GetKeyDown("d") && CanClick && HasFood){
+        if (Input.GetKeyDown("j") && CanClick && HasFood){
             transform.Rotate(0,0,45);
             leftWall.SetActive(false);
             CanClick = false;
