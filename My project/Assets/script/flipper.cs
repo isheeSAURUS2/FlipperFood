@@ -7,12 +7,14 @@ public class flipper : MonoBehaviour
     [SerializeField] private float timer = 0f;
     [SerializeField] private GameObject leftWall;
     [SerializeField] private GameObject rightWall;
-    private float delay = 10f;
+    private float delay = 3f;
     [SerializeField] private bool CanClick = true;
     [SerializeField] private bool HasFood = false;
     
     [SerializeField] private Transform ThisTransform;
     [SerializeField] private Transform FoodTransform;
+    [SerializeField] private GameObject foodObject;
+
 
     // Update is called once per frame
     void Update()
@@ -20,6 +22,8 @@ public class flipper : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= delay){
             timer = 0;
+            Destroy(foodObject);
+            
             //do iets
         }
 
